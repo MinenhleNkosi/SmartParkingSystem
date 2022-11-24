@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInfo"
+    >
+
+    <TextView
+        android:text="Email: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView47"
+        android:layout_alignStart="@+id/textView47"
+        android:layout_alignLeft="@+id/textView47"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView48"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="License: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView48"
+        android:layout_alignStart="@+id/textView48"
+        android:layout_alignLeft="@+id/textView48"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView49"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Username: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView49"
+        android:layout_alignStart="@+id/textView49"
+        android:layout_alignLeft="@+id/textView49"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView75"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license"
+        android:text="DMVLic2016"
+        android:layout_above="@+id/textView75"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="emailID@domain.com"
+        android:layout_above="@+id/textView49"
+        android:layout_alignStart="@+id/nameTV"
+        android:layout_alignLeft="@+id/nameTV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="myUsername"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textView75"
+        android:layout_alignBottom="@+id/textView75"
+        android:layout_alignStart="@+id/license"
+        android:layout_alignLeft="@+id/license"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTV"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="FirstName LastName"
+        android:layout_above="@+id/textView48"
+        android:layout_toEndOf="@+id/textView75"
+        android:layout_toRightOf="@+id/textView75"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"/>
+
+    <TextView
+        android:text="Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView47"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/new_home"
+        android:background="#FFFFFF"
+        android:id="@+id/button19"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:text="PERSONAL INFORMATION"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/textView28"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/button19"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/help"
+        android:background="@mipmap/help"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="46dp"
+        android:layout_height="46dp" />
+
+    <Button
+        android:text="Change Password"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_border_bg2"
+        android:id="@+id/button21"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView49"
+        android:layout_toRightOf="@+id/textView49"/>
+
+</RelativeLayout>

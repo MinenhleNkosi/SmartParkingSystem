@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartparkingsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DriverRegistration" />
+
+        <activity android:name=".Payment" />
+        <activity android:name=".Clockin" />
+        <activity android:name=".activity_review" />
+        <activity android:name=".CountDownCheckOut" />
+        <activity android:name=".PersonalInfo" />
+
+
+        <activity android:name=".CommentBoss" />
+        <activity android:name=".BossEmergency" />
+        <activity android:name=".BossMap" />
+        <activity android:name=".comment" />
+        <activity android:name=".Reservation" />
+        <activity android:name=".MapDirectional" />
+        <activity android:name=".ReportIllegal" />
+        <activity android:name=".Emergency" />
+        <activity android:name=".Settings" />
+        <activity
+            android:name=".PopUp"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".RecieveReports" />
+        <activity android:name=".Messages" />
+        <activity android:name=".ErrorReport" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".RecieveNewParking" />
+        <activity android:name=".Resume">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserHomepage" />
+        <activity android:name=".History_2_user" />
+        <activity android:name=".UserReviewHistory" />
+        <activity android:name=".MessageUsersActivity" />
+        <activity android:name=".HELP_USER" />
+        <activity android:name=".OwnerHomepage" />
+        <activity android:name=".ChooseDepartureTimeActivity" />
+        <activity android:name=".UserReviewHistoryPage2">
+
+        </activity>
+
+
+    </application>
+
+</manifest>

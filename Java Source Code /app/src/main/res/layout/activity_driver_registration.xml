@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_driver_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DriverRegistration">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/help"
+            android:background="@mipmap/help"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:text="RESET"
+            android:layout_width="150dp"
+            android:textSize ="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:background="@drawable/my_border_bg2"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <CheckBox
+            android:text="I'm not a robot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notARobot"
+            android:layout_above="@+id/submit_registration"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="11dp" />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_registration"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/my_border_bg2"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/new_home"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/registrationHomeButton"
+            android:background="@drawable/common_full_open_on_phone"
+            android:layout_alignBottom="@+id/help" />
+
+        <TextView
+            android:id="@+id/selectAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/notARobot"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="128dp"
+            android:layout_marginBottom="174dp"
+            android:text="Sorry, this email has already been used.\nPlease try again with a different email."
+            android:textColor="#1539c3" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="REGISTRATION FORM"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView40"
+        android:layout_width="200dp"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Sorry, this username is already taken.\nPlease try again with a different username."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/invalidUsernameTV"
+        android:textColor="#1539c3"
+        android:layout_below="@+id/userPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstName"
+        android:hint="First name"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView40"
+        android:layout_centerHorizontal="true"
+        android:layout_width="270dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastName"
+        android:hint="Last Name"
+        android:layout_below="@+id/firstName"
+        android:layout_alignStart="@+id/firstName"
+        android:layout_alignLeft="@+id/firstName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailAddress"
+        android:hint="Email Address"
+        android:layout_below="@+id/lastName"
+        android:layout_alignStart="@+id/lastName"
+        android:layout_alignLeft="@+id/lastName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/license"
+        android:hint="Driver's License #"
+        android:layout_below="@+id/emailAddress"
+        android:layout_alignStart="@+id/emailAddress"
+        android:layout_alignLeft="@+id/emailAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/userName"
+        android:hint="Username"
+        android:layout_below="@+id/license"
+        android:layout_alignStart="@+id/license"
+        android:layout_alignLeft="@+id/license"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/userPassword"
+        android:hint="Password"
+        android:layout_below="@+id/userName"
+        android:layout_alignStart="@+id/userName"
+        android:layout_alignLeft="@+id/userName"
+        android:textAlignment="center"
+        android:inputType="text" />
+
+</RelativeLayout>
